@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="#ffffff">
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		>
+
+		<TextView
+  			android:id="@+id/pleaseInputValuesTextView"
+  			android:background="#4284D3"
+			android:text="@string/pleaseInputValuesText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="20dp"
+			android:paddingLeft="15dp"	
+			android:paddingBottom="20dp"		
+			android:textColor="#000000"		
+			/>
+		
+	</RelativeLayout>
+
+	<RelativeLayout   
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+  		
+		<TextView
+  			android:id="@+id/feetToTargetTextView"
+			android:text="@string/feetToTargetText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:paddingTop="10dp"
+			android:paddingLeft="15dp"
+			android:textColor="#000000"		
+			/>
+			
+		<EditText
+  			android:id="@+id/feetToTargetEditText"
+  			android:text="@string/ftInputPrompt"
+  			android:paddingLeft="50dp"
+  			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"  			
+  			/>				
+  		 		
+  	</RelativeLayout>   		
+  		
+  	<RelativeLayout   
+  		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+  	  	
+  	  	<TextView
+  			android:id="@+id/diameterOfTargetTextView"
+			android:text="@string/diameterOfTargetText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:paddingTop="10dp"
+			android:paddingLeft="15dp"
+			android:textColor="#000000"	
+			/>  
+  	  	  		  		
+  		<EditText
+  			android:id="@+id/diameterOfTargetEditText"
+  			android:text="@string/inInputPrompt"
+  			android:paddingLeft="50dp"
+  			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+  			/>  		
+  		
+	</RelativeLayout> 
+	
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		
+	<TextView
+  		android:id="@+id/oneClickEqualsTextView"
+		android:text="@string/oneClickEqualsText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:paddingTop="20dp"
+		android:paddingLeft="15dp"
+		android:textColor="#000000"	
+		/>
+		  	
+	<EditText
+		android:id="@+id/oneClickEqualsEditText"
+  		android:text="@string/inInputPrompt"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingTop="20dp"		
+		/>
+		
+	<TextView
+  		android:id="@+id/inchesTextView"
+		android:text="@string/inchesAtText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:paddingTop="20dp"
+		android:paddingLeft="4dp"
+		android:textColor="#000000"	
+		/>
+	
+	<EditText
+		android:id="@+id/yardsForAdjustEditText"
+		android:text="@string/yardsInputPrompt"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingTop="20dp"
+		android:paddingLeft="4dp"
+		/>
+
+	<TextView
+		android:id="@+id/yardsTextView"
+		android:text="@string/yardsText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:paddingTop="20dp"
+		android:paddingLeft="4dp"
+		android:textColor="#000000"	
+		/>
+
+	</LinearLayout> 
+
+	<!-- beginning of direction determiners -->
+
+	<RelativeLayout   
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+  	
+  		<TextView
+  			android:id="@+id/clockwiseUpTextView"
+			android:text="@string/clockwiseAdjustsUpText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:paddingTop="10dp"
+			android:paddingLeft="15dp"
+			android:textColor="#000000"		
+			/>
+
+<!--android:choiceMode="CHOICE_MODE_SINGLE" -->
+
+		<Spinner
+  			android:id="@+id/clockwiseUpSpinner"
+  			android:prompt="@string/tfPrompt"  			
+  			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+  			/>
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    android:text="TextView" />
+  		 		
+  	</RelativeLayout>   		
+  		
+  	<RelativeLayout   
+  		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+  	  	
+  	  	<TextView
+  			android:id="@+id/clockwiseLeftTextView"
+			android:text="@string/clockwiseAdjustsLeftText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:paddingTop="10dp"
+			android:paddingLeft="15dp"
+			android:textColor="#000000"	
+			/>  
+  	  	  		  		
+  		<Spinner
+  			android:id="@+id/clockwiseLeftSpinner"
+  			android:prompt="@string/tfPrompt"
+  			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+  			/>	
+  		
+	</RelativeLayout> 
+
+      <!-- end of direction determiners -->
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingTop="20dp"
+		android:orientation="vertical">
+
+	</LinearLayout>
+
+
+	<Button
+	    android:id="@+id/goButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/goButtonText" />
+
+</LinearLayout>

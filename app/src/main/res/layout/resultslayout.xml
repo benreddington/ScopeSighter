@@ -1,0 +1,130 @@
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff">
+		
+	<TextView
+		android:id="@+id/adjustStatementTextView"
+		android:text="@string/adjustYourScopeText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"			
+		android:textColor="#000000"
+		android:textSize="20sp"
+		/>
+		
+	<TextView
+		android:text="@string/windageText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:textColor="#000000"
+		android:textSize="30sp"			
+		/>		
+		
+	<TextView
+		android:id="@+id/windageClicks"
+		android:paddingLeft="15dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:textColor="#000000"
+		android:textSize="50sp"
+		/>	
+			
+		
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:orientation="horizontal">	
+		
+		<TextView			
+			android:text="@string/clicksText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			/>	
+				
+		<TextView
+			android:id="@+id/windageDirection"
+			android:paddingLeft="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#000000"
+			/>	
+			
+	</LinearLayout>	
+		
+	<TextView
+		android:text="@string/elevationText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:paddingTop="10dp"
+		android:textColor="#000000"
+		android:textSize="30sp"			
+		/>
+		
+	<TextView
+		android:id="@+id/elevationClicks"			
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:textColor="#000000"
+		android:textSize="50sp"
+		/>	
+		
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"		
+		android:orientation="horizontal">
+		
+		<TextView			
+			android:text="@string/clicksText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:textColor="#000000"
+			/>
+			
+		<TextView
+			android:id="@+id/elevationDirection"
+			android:paddingLeft="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:textColor="#000000"
+			/>				
+		
+	</LinearLayout>		
+		
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingTop="15dp"
+		>				
+			
+		<Button
+			android:id="@+id/newSessionButton"
+			android:text="@string/freshTargetButtonText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"			
+			android:layout_gravity="center_horizontal"
+			/>		
+			
+		<Button
+			android:id="@+id/homeButton"
+			android:text="@string/homeButtonText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"  
+			/>		
+	
+	</LinearLayout>	
+	
+</LinearLayout>

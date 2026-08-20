@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="#ffffff">
+
+	<!--
+    <ImageView
+    	android:id="@+id/imageViewBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/background"
+        android:scaleType="center"
+        android:contentDescription="Fade Background"
+        android:adjustViewBounds="true" />
+    -->
+    
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+		<LinearLayout 
+		    android:id="@+id/saveableManagerLayout"
+		 	android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		
+			<!-- Hold all scope controls -->
+			<TableLayout 
+			    android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:stretchColumns="true"
+				android:shrinkColumns="true">
+				
+			    <TableRow
+			        android:stretchColumns="true"
+					android:shrinkColumns="true">
+			        <!-- android:layout_height="wrap_content"> -->
+			        <!--   -->
+	
+			        <Spinner
+			            android:id="@+id/scopeListSpinner"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_span="2"
+			            android:layout_weight="1"		            
+			            android:prompt="@string/scope_prompt" />
+		  			
+			    </TableRow>
+
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center">
+
+					<TextView
+						android:id="@+id/nameOfScopeTextView"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:paddingLeft="10dp"
+						android:text="@string/scopeNamePrompt"
+						android:textColor="#000000" />
+
+					<EditText
+						android:id="@+id/scopeNameEditText"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:inputType="text" />
+
+				</TableRow>
+
+				<TableRow android:gravity="center">
+
+					<TextView
+						android:id="@+id/clockwiseUpTextView"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:gravity="top"
+						android:lines="3"
+						android:paddingLeft="10dp"
+						android:paddingTop="10dp"
+						android:paddingBottom="10dp"
+						android:text="@string/clockwiseAdjustsUpText"
+						android:textColor="#000000" />
+
+					<!-- True False Toggle for above -->
+					<Button
+						android:id="@+id/clockwiseUpToggleButton"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:text="@string/toggleUp" />
+
+				</TableRow>
+
+				<TableRow
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center">
+
+					<TextView
+						android:id="@+id/clockwiseLeftTextView"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="0dp"
+						android:layout_weight=".5"
+						android:lines="3"
+						android:paddingLeft="10dp"
+						android:paddingTop="5dp"
+						android:paddingBottom="5dp"
+						android:text="@string/clockwiseAdjustsLeftText"
+						android:textColor="#000000" />
+					<!-- True False Toggle for above -->
+					<Button
+						android:id="@+id/clockwiseLeftToggleButton"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:onClick="onWindageButtonClicked"
+						android:text="@string/toggleLeft" />
+
+				</TableRow>
+
+				<TableRow android:gravity="center">
+
+					<TextView
+						android:id="@+id/oneClickEqualsTextView"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:paddingLeft="10dp"
+						android:text="@string/oneClickEqualsText"
+						android:textColor="#000000" />
+
+					<EditText
+						android:id="@+id/oneClickEqualsEditText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:inputType="number|numberSigned|numberDecimal"
+						android:paddingTop="20dp"
+						android:text="@string/inInputPrompt" />
+				</TableRow>
+
+				<TableRow android:gravity="center">
+
+					<TextView
+						android:id="@+id/inchesTextView"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:paddingLeft="10dp"
+						android:text="@string/inchesAtText"
+						android:textColor="#000000" />
+
+					<EditText
+						android:id="@+id/yardsForAdjustEditText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:inputType="number|numberSigned|numberDecimal"
+						android:paddingTop="20dp"
+						android:text="@string/yardsInputPrompt" />
+
+				</TableRow>
+			    <!-- Scope button controls -->
+			    <TableRow>
+			        <Button
+					    android:id="@+id/saveScopeButton"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_weight=".99"	
+					    android:text="@string/saveScopeButtonText" />
+			        <Button
+					    android:id="@+id/deleteScopeButton"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_weight=".5"	
+					    android:text="@string/deleteScopeButtonText" />	                
+			    </TableRow>
+			</TableLayout>
+			<!-- Hold all range controls -->
+			<TableLayout 
+			    android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:stretchColumns="true"
+				android:shrinkColumns="true">
+			    <TableRow 
+			        android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+			        <!-- Choose your range for edit/delete -->
+		
+			        <Spinner
+			            android:id="@+id/rangeListSpinner"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_span="3"
+			            android:layout_weight="1"
+			            android:prompt="@string/range_prompt" />
+		
+			    </TableRow>
+			    <TableRow>
+			        <TextView
+			            android:id="@+id/nameOfRangeTextView"
+						android:text="@string/rangeNamePrompt"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"									
+						android:paddingLeft="10dp"
+						android:textColor="#000000"
+						android:layout_weight="0.5"/>
+			        <EditText 
+			            android:id="@+id/rangeNameEditText"
+			            android:text="@string/testString"
+			            android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_span="2"	
+						android:inputType="text"
+			            android:layout_weight="0.5"/>	
+			            
+			    </TableRow>
+			    <TableRow>
+			        <TextView
+			  			android:id="@+id/feetToTargetTextView"
+						android:text="@string/feetToTargetText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"					
+						android:paddingLeft="10dp"
+						android:textColor="#000000"	
+						android:layout_weight="0.5"/>					
+					
+					<EditText
+					    android:id="@+id/feetToTargetEditText"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:inputType="number|numberSigned|numberDecimal"
+					    android:layout_span="2"				    
+					    android:text="@string/ftInputPrompt"
+					    android:layout_weight="0.5"/>
+		
+			    </TableRow>
+
+				<TableRow>
+
+					<TextView
+						android:id="@+id/diameterOfTargetTextView"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="0.5"
+						android:paddingLeft="10dp"
+						android:text="@string/diameterOfTargetText"
+						android:textColor="#000000" />
+
+					<EditText
+						android:id="@+id/diameterOfTargetEditText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_span="2"
+						android:layout_weight="0.5"
+						android:inputType="number|numberSigned|numberDecimal"
+						android:text="@string/inInputPrompt" />
+
+				</TableRow>
+			    <!-- End of Range Controls -->
+			    <!-- Range control buttons -->
+			    <TableRow
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content">
+			        <Button
+					    android:id="@+id/saveRangeButton"	
+					    android:text="@string/saveRangeButtonText"
+					    android:layout_weight="0.333"/>
+			        <Button
+					    android:id="@+id/deleteRangeButton"	
+					    android:text="@string/deleteRangeButtonText"
+					    android:layout_weight="0.333"/>
+			        <Button
+					    android:id="@+id/backButton"	
+					    android:text="@string/backButtonText"
+					    android:layout_weight="0.333"/>	        
+			    </TableRow>	    
+			</TableLayout>
+		</LinearLayout>
+	</ScrollView>
+</FrameLayout>

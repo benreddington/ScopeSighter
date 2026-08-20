@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.reddington.scopesighter">
+      <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <application 
+    	android:icon="@drawable/hdpiscopelogo" 
+    	android:label="@string/app_name"
+    	android:name=".ScopeSighterApplication"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:allowBackup="true">
+        <activity android:name=".HomeActivity" android:label="@string/titleScopeSighterHome" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SightingSessionActivity" android:label="@string/titleSightingSession" android:screenOrientation="portrait"/>
+		<activity android:name=".SessionResultsActivity" android:label="@string/titleResults" android:screenOrientation="portrait"/>
+		<activity android:name=".SavableManagerActivity" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

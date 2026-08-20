@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Strings for testing -->
+    <string name="testString">Test</string>
+    
+    <!-- Strings in AndroidManifest File -->
+    <string name="app_name">ScopeSighter</string>
+
+    <!-- Strings in ScopeSighterHome Activity -->
+    <string name="newSessionButtonText">New Session</string>
+    <string name="scopeSighterHomeTitleText">Scope Sighter</string>  
+    <string name="aboutButtonText">About</string>
+    <string name="logoAltText">The scopesighter logo</string>
+    <string name="scopeAndRangeManagerButtonText">Scope and Range Manager</string> 
+    <string name="scopesText">Scopes:</string>
+    <string name="rangesText">Ranges:</string> 
+    <string name="helpButtonText">Help!</string>
+    <string name="unitsButtonMetricText">App is Metric</string>
+    <string name="unitsButtonImperialText">App is Imperial</string>
+    <string name="unitsButtonMetricTextToggle">App is Metric\nTap to Toggle</string>
+    <string name="unitsButtonImperialTextToggle">App is Imperial\nTap to Toggle</string>
+
+    <!-- Strings in popup dialog -->
+    <string name="dialogTitleText">The Art of ScopeSighter-ing</string>
+    <string name="closeButtonText">Close</string>
+    <string name="dialogBodyText">1) Click the \"Scope And Range Manager\" Button \n2) Enter the info for your scope and range\n3) Put down your phone, and shoot a grouping\n4) Press the \"New Session\" button\n5) Tap on the screen to match your paper target\n6) Press \"Display Results,\" make the adjustments, and repeat as necessary!</string>
+    
+    <!-- Strings in AboutActivity -->
+    <string name="aboutTitleText">About ScopeSighter</string>
+    <string name="aboutMainText">This started as a java program years ago, and seemed like a good concept for learning Android. As you can see, I learned more about app functionality than design&#8230; I don\'t know how much time I\'ll dedicate to improvements, but if you have suggestions please send me an email. Thanks for giving ScopeSighter a try! \n\nPS If there are any Android/Web UI people out there looking for a portfolio project&#8230;I know a guy who could use you.</string>
+    <!-- <string name="donateButtonText">Donate via PayPal</string> -->
+        
+    <!-- Strings in Scope and Range Spinner -->
+    <string name="scope_prompt">Choose a scope</string>
+    <string name="range_prompt">Choose a range</string>
+    
+    <!-- Strings in SavableManger Activity -->
+    <string name="backgroundContentDescription">Fade Background</string>
+    <string name="scopeNamePrompt">Scope Name</string>
+    <string name="rangeNamePrompt">Range Name</string>
+    <string name="saveScopeButtonText">Save Scope</string>
+    <string name="deleteScopeButtonText">Delete Scope</string>
+    <string name="saveRangeButtonText">Save Range</string>
+    <string name="deleteRangeButtonText">Delete Range</string>
+    <string name="backButtonText">Back</string>
+    <string name="homeButtonText">Home</string>
+    <string name="toggleUp">Up</string>
+    <string name="toggleDown">Down</string>
+    <string name="toggleLeft">Left</string>
+    <string name="toggleRight">Right</string>
+    <string name="feetToTargetText">Feet to Target:</string>
+    <string name="metersToTargetText">Meters to Target:</string>
+    <string name="diameterOfTargetText">Target diameter (in)</string>
+    <string name="metricDiameterOfTargetText">Target diameter (cm)</string>
+    <string name="yardsInputPrompt">(yd)</string>
+    <string name="inchesAtText">Distance to target\nyour scope specifies\nfor adjustments? (yds)</string>
+    <string name="metricDistanceForScopeText">Distance to target\nyour scope specifies\nfor adjustments? (m)</string>
+    <string name="oneClickEqualsText">Distance shot\nplacement is changed\nper increment (in)</string>
+    <string name="metricOneClickEqualsText">Distance shot\nplacement is changed\nper increment (cm)</string>
+    <string name="clockwiseAdjustsUpText">1 elevation increment\nclockwise moves\nshot placement:</string>
+    <string name="tfPrompt">T/F</string>
+    <string name="inInputPrompt">in</string>
+    <string name="ftInputPrompt">ft</string>
+    <string-array name="tfArray">
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+    <string name="clockwiseAdjustsLeftText">1 windage increment\nclockwise moves\nshot placement:</string>
+    <string name="goButtonText">Go!</string>
+
+    <!-- Strings in SightingSession Activity -->
+    <string name="sightingSessionTitleText">Sighting Session</string>
+    <string name="qMark">Help</string>
+    <string name="displayResultButtonText">Display Results</string>
+    <string name="showTargetButtonText">Show Target and Begin</string>
+    <string name="yardsText">yards</string>
+    
+    <!-- Strings in Results Activity -->
+    <string name="adjustYourScopeText">Adjust your scope\'s</string>
+    <string name="resultsTitleText">Results</string>
+    <string name="elevationText">Elevation</string>
+    <string name="clicksText">clicks</string>
+    <string name="windageText">Windage</string>
+    <string name="resultsToHomeButtonText">New Scope/Range Info</string>
+    <string name="freshTargetButtonText">Fresh Target for Next Grouping</string>
+    
+    <!-- Activity Names -->
+    <string name="titleSessionInfo">Session Information</string>
+    <string name="titleScopeSighterHome">ScopeSighter</string>
+    <string name="titleSightingSession">Sighting Session</string>
+    <string name="titleResults">Results</string>
+
+    <!-- Strings not used -->
+    <string name="pleaseInputValuesText">Please provide the information requested below. This data will be used by the app to calculate the correct adjustments you should make to your scope, based on the shot groupings that you provide on the next screen.</string>
+
+</resources>

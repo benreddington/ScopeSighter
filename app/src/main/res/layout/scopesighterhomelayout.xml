@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainTableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+    <!-- android:background="@drawable/background" -->
+
+     <!-- row to hold the sslogo -->
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <!-- add the logo (as the only column?)"@string/logoAltText" -->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/logoAltText"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:layout_span="2"
+            android:src="@drawable/sslogo" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <!-- need to add a basic layout manager here to make elements in a -->
+        <!-- horizontal list rather than adding columns to the row -->
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutButtonText"
+            android:layout_span="2" />
+            
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/scopeAndRangeManagerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scopeAndRangeManagerButtonText" 
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="35dp">
+
+        <!-- Scope choice elements here -->
+
+        <TextView
+            android:id="@+id/scopesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight=".5"            
+            android:text="@string/scopesText"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/scopeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:prompt="@string/scope_prompt" />
+    </TableRow>
+
+    <TableRow>
+
+        <!-- Range choice elements here -->
+
+        <TextView
+            android:id="@+id/rangesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/rangesText"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/rangeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:prompt="@string/range_prompt" />
+    </TableRow>
+    <!-- close ranges elements -->
+    <!-- final row for holding "Begin Session" button -->
+
+    <TableRow
+        android:background="@android:color/transparent" 
+        android:paddingTop="35dp">
+
+        <Button
+            android:id="@+id/newSessionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newSessionButtonText" 
+            android:layout_span="2"/>
+    </TableRow>
+    
+    <TableRow
+        android:background="@android:color/transparent"> 
+        
+        <Button
+            android:id="@+id/helpButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="@string/helpButtonText" 
+            android:layout_weight=".5"
+            android:layout_span="1"/>
+        <Button
+            android:id="@+id/unitsButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content" 
+            android:layout_weight=".5"
+            android:layout_span="1"/>
+    </TableRow>
+    
+    
+
+</TableLayout><!-- closes TableLayout with all the UI elements -->
